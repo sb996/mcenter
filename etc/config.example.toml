@@ -1,0 +1,26 @@
+[app]
+name = "mcenter"
+key  = "this is your app key"
+
+[ioc.http]
+host = "127.0.0.1"
+port = "8010"
+
+[ioc.grpc]
+host = "127.0.0.1"
+port = "18010"
+
+[mongodb]
+endpoints = ["127.0.0.1:27017"]
+username = "mcenter"
+password = "123456"
+database = "mcenter"
+
+[log]
+level = "debug"
+path = "logs"
+format = "text"
+to = "stdout"
+
+[jaeger]
+endpoint = "http://localhost:14268/api/traces"

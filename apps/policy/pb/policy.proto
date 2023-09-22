@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package infraboard.mcenter.policy;
+option go_package = "github.com/infraboard/mcenter/apps/policy";
+
+import "mcube/pb/resource/meta.proto";
+import "mcenter/apps/role/pb/role.proto";
+import "mcube/pb/resource/label.proto";
+
+// Policy 权限策略
+message Policy {
+    // 元信息
+    // @gotags: bson:",inline" json:"meta"
+    mcube.resource.Meta meta = 1;
+    // 策略定义
+    // @gotags: bson:",inline" json:"spec"
+    CreatePolicyRequest spec = 2;
+    // 关联的角色对象
+    // @gotags: bson:"-" json:"role,omitempty"
+    role.Role role = 3;
+}
+
+// CreatePolicyRequest 创建策略的请求
+message CreatePolicyRequest {
+    // 创建者
+    // @gotags: bson:"create_by" json:"create_by"
+    string create_by = 1;  
+    // 策略所属域
+    // @gotags: bson:"domain" json:"domain"
+    string domain = 2;
+    // 范围
+    // @gotags: bson:"namespace" json:"namespace" validate:"lte=120"
+    string namespace = 3;
+    // 用户Id
+    // @gotags: bson:"user_id" json:"user_id" validate:"required,lte=120"
+    string user_id = 4;
+    // 角色Id
+    // @gotags: bson:"role_id" json:"role_id" validate:"required,lte=40"
+    string role_id = 5;
+    // 该角色的生效范围
+    // @gotags: bson:"scope" json:"scope"
+    repeated mcube.resource.LabelRequirement scope = 6;
+    // 策略过期时间
+    // @gotags: bson:"expired_time" json:"expired_time"
+    int64 expired_time = 7;
+    // 只读策略, 不允许用户修改, 一般用于系统管理
+    // @gotags: bson:"read_only" json:"read_only"
+    bool read_only = 8;
+    // 启用该策略
+    // @gotags: bson:"enabled" json:"enabled"
+    bool enabled = 9;  
+    // 扩展属性
+    // @gotags: bson:"extra" json:"extra"
+    map<string,string> extra = 14; 
+    // 标签
+    // @gotags: bson:"labels" json:"labels"
+    map<string,string> labels = 15;        
+}
+
+message PolicySet {
+    // @gotags: bson:"total" json:"total"
+    int64 total = 1;
+    // @gotags: bson:"items" json:"items"
+    repeated Policy items = 2;
+}

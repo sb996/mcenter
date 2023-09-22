@@ -1,0 +1,90 @@
+syntax = "proto3";
+
+package infraboard.mcenter.namespace;
+option go_package = "github.com/infraboard/mcenter/apps/namespace";
+
+import "mcube/pb/resource/meta.proto";
+
+enum VISIBLE {
+    // 默认空间是私有的, 只对加入该空间的用户可见
+    PRIVATE = 0;
+	// PUBLIC  公开的空间, 对所有人可见, 所有人均可访问该空间
+	PUBLIC = 1;
+}
+
+// Namespace tenant resource container
+message Namespace {
+    // 元信息
+    // @gotags: bson:",inline" json:"meta"
+    mcube.resource.Meta meta = 1;
+    // 空间定义
+    // @gotags: bson:",inline" json:"spec"
+    CreateNamespaceRequest spec = 2;
+}
+
+message CreateNamespaceRequest {
+    // 所属域ID
+    // @gotags: bson:"domain" json:"domain"
+    string domain = 1;
+    // 父Namespace Id
+    // @gotags: bson:"parent_id" json:"parent_id"
+    string parent_id = 2;
+    // 空间名称, 不允许修改
+    // @gotags: bson:"name" json:"name" validate:"required"
+    string name = 3;
+    // 空间负责人
+    // @gotags: bson:"owner" json:"owner"
+    string owner = 4;
+    // 空间负责人助理
+    // @gotags: bson:"assistants" json:"assistants"
+    repeated string assistants = 9;
+    // 禁用项目, 该项目所有人暂时都无法访问
+    // @gotags: bson:"enabled" json:"enabled"
+    bool enabled = 5;
+    // 项目描述图片
+    // @gotags: bson:"picture" json:"picture"
+    string picture =6;
+    // 项目描述
+    // @gotags: bson:"description" json:"description"
+    string description = 7;
+    // 空间可见性, 默认是私有空间
+    // @gotags: bson:"visible" json:"visible"
+    VISIBLE visible = 8;
+    // 空间的资源配额限制
+    // @gotags: bson:"resource_quota" json:"resource_quota"
+    ResourceQuotaSet resource_quota = 13;
+    // 扩展信息
+    // @gotags: bson:"extension" json:"extension"
+    map<string,string> extension = 14;
+    // 空间标签
+    // @gotags: bson:"labels" json:"labels"
+    map<string,string> labels = 15;
+}
+
+message ResourceQuotaSet {
+    // 资源列表
+    // @gotags: bson:"items" json:"items"
+    repeated ResourceQuota items = 1;
+}
+
+// 资源配额限制策略
+message ResourceQuota {
+    // 资源名称
+    // @gotags: bson:"resource_name" json:"resource_name"
+    string resource_name = 1;
+    // 软限制(水位线)
+    // @gotags: bson:"soft" json:"soft"
+    int64 soft = 2;
+    // 硬限制
+    // @gotags: bson:"hard" json:"hard"
+    int64 hard = 3;
+}
+
+message NamespaceSet {
+    // 总数量
+    // @gotags: json:"total"
+    int64 total = 1;
+    // 列表
+    // @gotags: json:"items"
+    repeated Namespace items = 2;
+}

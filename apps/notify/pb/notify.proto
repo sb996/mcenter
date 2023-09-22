@@ -1,0 +1,136 @@
+syntax = "proto3";
+
+package infraboard.mcenter.notify;
+option go_package = "github.com/infraboard/mcenter/apps/notify";
+
+import "mcube/pb/resource/meta.proto";
+
+enum PROVIDER {
+    // 腾讯短信服务
+    TENCENT = 0;
+    // 阿里短信服务
+    ALI = 1;
+}
+
+enum NOTIFY_TYPE {
+    // 邮件通知
+    MAIL = 0;
+    // 短信通知
+    SMS = 1;
+    // 语音通知
+    VOICE = 2;
+    // IM个人消息
+    IM = 3;
+}
+
+message SendNotifyRequest {
+    // 域
+    // @gotags: json:"domain" bson:"domain" validate:"required"
+    string domain = 1;
+    // 空间
+    // @gotags: json:"namespace" bson:"namespace" validate:"required"
+    string namespace = 2;
+    // 通知类型
+    // @gotags: json:"notify_tye" bson:"notify_tye"
+    NOTIFY_TYPE notify_tye = 3;
+    // 用户
+    // @gotags: json:"users" bson:"users" validate:"required"
+    repeated string users = 4;
+    // 消息标题
+    // @gotags: json:"title" bson:"title" validate:"required"
+    string title = 5;
+    // 消息内容格式, 格式如果不填由 由具体渠道自行适配
+    // @gotags: json:"content_type" bson:"content_type"
+    string content_type = 10;
+    // 消息内容
+    // @gotags: json:"content" bson:"content"
+    string content = 6;
+	// 用户的 session 内容，腾讯 server 回包中会原样返回
+    // @gotags: bson:"session_context" json:"session_context"
+    string session_context = 9;
+    // 短信通知请求参数
+    // @gotags: json:"sms_request" bson:"sms_request"
+    SMSRequest sms_request = 7;
+    // 语音通知请求参数
+    // @gotags: json:"voice_request" bson:"voice_request"
+    VoiceRequest voice_request = 8;
+    // 标签, 方便查找
+    // @gotags: json:"labels" bson:"labels"
+    map<string,string> labels = 14;
+    // 扩展参数
+    // @gotags: json:"extra" bson:"extra"
+    map<string,string> extra = 15;
+}
+
+message SMSRequest {
+    // 短信模版的Id
+    // @gotags: bson:"template_id" json:"template_id"
+    string template_id = 1;
+    // 模版参数
+    // @gotags: bson:"template_params" json:"template_params"
+    repeated string template_params = 2;
+}
+
+message VoiceRequest {
+    // 短信模版的Id
+    // @gotags: bson:"template_id" json:"template_id"
+    string template_id = 1;
+    // 模版参数
+    // @gotags: bson:"template_params" json:"template_params"
+    repeated string template_params = 2;
+	// 播放次数，可选，最多3次，默认2次
+    // @gotags: bson:"play_times" json:"play_times"
+    uint64 play_times = 4;
+}
+
+message RecordSet {
+    // 总数
+    // @gotags: json:"total" bson:"total"
+    int64 total = 1;
+    // 发生记录
+    // @gotags: json:"items" bson:"items"
+    repeated Record items = 2;
+}
+
+message Record {
+    // 元信息
+    // @gotags: bson:",inline" json:"meta"
+    infraboard.mcube.resource.Meta meta = 1;
+    // 请求
+    // @gotags: json:"request" bson:",inline"
+    SendNotifyRequest request = 2;
+    // 发送响应
+    // @gotags: json:"response" bson:"response"
+    repeated SendResponse response = 15;
+}
+
+message SendResponse {
+    // 用户
+    // @gotags: json:"user" bson:"user"
+    string user = 1;
+    // 通知目标, 如果是邮件就是邮箱, 电话就是电话号码, 一般不用填写, 通过查询用户信息获取
+    // @gotags: json:"target" bson:"target"
+    string target = 2;
+    // 是否发生成功
+    // @gotags: json:"success" bson:"success"
+    bool success = 3;
+    // 失败时的错误
+    // @gotags: json:"message" bson:"message"
+    string message = 4;
+    // 语音通知响应
+    // @gotags: json:"voice_response" bson:"voice_response,omitempty"
+    VoiceResponse voice_response = 5;
+
+    // 其他信息
+    // @gotags: json:"extra" bson:"extra"
+    map<string,string> extra = 15;
+}
+
+message VoiceResponse {
+    // 呼叫Id
+    // @gotags: bson:"call_id" json:"call_id"
+    string call_id = 1;
+	// 用户的 session 内容，腾讯 server 回包中会原样返回
+    // @gotags: bson:"session_context" json:"session_context"
+    string session_context = 2;
+}

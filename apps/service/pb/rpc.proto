@@ -1,0 +1,94 @@
+syntax = "proto3";
+
+package infraboard.mcenter.service;
+option go_package = "github.com/infraboard/mcenter/apps/service";
+
+import "mcube/pb/page/page.proto";
+import "mcenter/apps/service/pb/service.proto";
+import "mcube/pb/resource/label.proto";
+import "mcube/pb/resource/meta.proto";
+
+// RPC 服务
+service RPC {
+	rpc ValidateCredential(ValidateCredentialRequest) returns(Service);
+	rpc QueryService(QueryServiceRequest) returns(ServiceSet);
+	rpc DescribeService(DescribeServiceRequest) returns(Service);
+    rpc QueryGitlabProject(QueryGitlabProjectRequest) returns(ServiceSet);
+}
+
+message QueryGitlabProjectRequest {
+    // 资源范围
+    // @gotags: json:"scope"
+    mcube.resource.Scope scope = 1;
+    // gitlab服务地址
+    // @gotags: json:"address"
+    string address = 2;
+    // 访问Token
+    // @gotags: json:"token" validate:"required"
+    string token = 3;
+}
+
+
+// ValidateCredentialRequest 校验服务凭证
+message ValidateCredentialRequest {
+    // 服务客户端ID
+    // @gotags: json:"client_id" yaml:"client_id" validate:"required,lte=100"
+    string client_id = 1;
+    // 服务客户端凭证
+    // @gotags: json:"client_secret" yaml:"client_secret" validate:"required,lte=100"
+    string client_secret = 2;                  
+}
+
+// QueryMicroRequest 查询应用列表
+message QueryServiceRequest {
+    // 资源范围
+    // @gotags: json:"scope"
+    mcube.resource.Scope scope = 1;
+    // 资源标签过滤
+    // @gotags: json:"filters"
+    repeated mcube.resource.LabelRequirement filters = 2;
+    // 分页参数
+    // @gotags: json:"page"
+   infraboard.mcube.page.PageRequest page = 3;
+    // 服务类型
+    // @gotags: json:"type" yaml:"type"
+    Type type = 4;
+    // 服务代码SSH仓库地址
+    // @gotags: json:"repository_ssh_urls" yaml:"repository_ssh_urls"
+    repeated string repository_ssh_urls = 5;
+    // 名称关键字搜索
+    // @gotags: json:"keywords" yaml:"keywords"
+    string keywords = 6;
+}
+
+enum DescribeBy {
+    // 通过service id查询应用详情
+    SERVICE_ID = 0;
+    // 通过service name查询应用详情
+    SERVICE_NAME = 1;
+    // 通过service client_id查询应用详情
+    SERVICE_CLIENT_ID =2;
+}
+
+// DescribeMicroRequest 查询应用详情
+message DescribeServiceRequest {
+    // 查询详情的方式
+    // @gotags: json:"describe_by" yaml:"describe_by"
+    DescribeBy describe_by = 1;
+    // 服务客户端Id
+    // @gotags: json:"client_id" yaml:"client_id"
+    string client_id = 2;
+    // 服务名称
+    // @gotags: json:"name" yaml:"name"
+    string name = 3;
+    // 服务Id
+    // @gotags: json:"id" yaml:"id"
+    string id = 4;
+}
+
+// DeleteMicroRequest todo
+message DeleteServiceRequest {
+    // 服务Id
+    // @gotags: json:"id" yaml:"id"
+    string id = 1;
+}

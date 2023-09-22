@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package infraboard.mcenter.label;
+option go_package = "github.com/infraboard/mcenter/apps/label";
+
+import "mcube/pb/page/page.proto";
+import "mcenter/apps/label/pb/label.proto";
+import "mcube/pb/request/request.proto";
+import "mcube/pb/resource/meta.proto";
+
+// 标签Key管理
+service RPC {
+    // 查询标签列表
+	rpc QueryLabel(QueryLabelRequest) returns(LabelSet);
+    // 查询标签列表
+	rpc DescribeLabel(DescribeLabelRequest) returns(Label);
+}
+
+message QueryLabelRequest {
+    // 资源范围
+    // @gotags: json:"scope"
+    mcube.resource.Scope scope = 1;
+    // 分页请求
+    // @gotags: json:"page"
+    mcube.page.PageRequest page = 2;
+    // key
+    // @gotags: json:"keys"
+    repeated string keys  = 3;
+}
+
+message UpdateLabelRequest {
+    // 更新模式
+    // @gotags: json:"update_mode"
+    mcube.request.UpdateMode update_mode = 1;
+    // 标签Id
+    // @gotags: json:"id"
+    string id = 2;
+    // 更新人
+    // @gotags: json:"update_by"
+    string update_by = 3;
+    // 标签信息
+    // @gotags: json:"spec"
+    CreateLabelRequest spec = 4;
+}
+
+message DeleteLabelRequest {
+    // 标签Id
+    // @gotags: json:"id"
+    string id = 1;
+}
+
+message DescribeLabelRequest {
+    // 标签Id
+    // @gotags: json:"id"
+    string id = 1;
+}

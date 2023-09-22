@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package infraboard.mcenter.notify;
+option go_package = "github.com/infraboard/mcenter/apps/notify";
+
+import "mcube/pb/page/page.proto";
+import "mcenter/apps/notify/pb/notify.proto";
+
+// 通知服务
+service RPC {
+    // 用户消息通知
+	rpc SendNotify(SendNotifyRequest) returns(Record);
+
+    // 查询发送记录
+    rpc QueryRecord(QueryRecordRequest) returns(RecordSet);
+}
+
+// 查询发送记录
+message QueryRecordRequest {
+    // 分页参数
+    // @gotags: json:"page"
+    infraboard.mcube.page.PageRequest page = 1;
+    // 通知类型
+    // @gotags: json:"notify_tye"
+    optional NOTIFY_TYPE notify_tye = 2;
+    // 域
+    // @gotags: json:"domain"
+    string domain = 3;
+    // 空间
+    // @gotags: json:"namespace"
+    string namespace = 4;
+}

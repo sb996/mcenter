@@ -1,0 +1,201 @@
+syntax = "proto3";
+
+package infraboard.mcenter.service;
+option go_package = "github.com/infraboard/mcenter/apps/service";
+
+import "mcube/pb/resource/meta.proto";
+import "mcube/pb/request/request.proto";
+
+enum Type {
+	// 源码类型的应用, 需要填写代码仓库信息
+	SOURCE_CODE = 0;
+    // 镜像类型的应用, 需要添加镜像信息
+    CONTAINER_IMAGE = 1;
+	// 其他类型
+	OTHER = 15;
+}
+
+// Service is service provider
+message Service {
+    // 元信息
+    // @gotags: bson:",inline" json:"meta"
+    infraboard.mcube.resource.Meta meta = 1;
+    // 服务定义
+    // @gotags: bson:",inline" json:"spec"
+    CreateServiceRequest spec = 2;
+    // 服务的凭证, 用于服务注册
+    // @gotags: bson:"credential" json:"credential"
+    Credential credential = 3;
+    // 服务安全所需配置
+    // @gotags: bson:"security" json:"security"
+    Security security = 4;
+}
+
+message CreateServiceRequest {
+    // 服务所属域
+    // @gotags: bson:"domain" json:"domain"
+    string domain = 1;
+    // 服务所属空间
+    // @gotags: bson:"namespace" json:"namespace"
+    string namespace = 2;
+    // 应用所有者
+    // @gotags: bson:"owner" json:"owner"
+    string owner = 3;
+    // 是否启用该服务, 服务如果被停用，将不会被发现
+    // @gotags: bson:"enabled" json:"enabled"
+    bool enabled = 4;
+    // 服务类型
+    // @gotags: bson:"type" json:"type"
+    Type type = 5;
+    // 服务名称
+    // @gotags: bson:"name" json:"name"
+    string name = 6;
+    // 服务Logo
+    // @gotags: bson:"logo" json:"logo"
+    string logo = 10;
+    // 服务描述信息
+    // @gotags: bson:"description" json:"description"
+    string description = 7;
+    // 服务等级, 默认0
+    // @gotags: bson:"level" json:"level"
+    uint32 level = 8;
+    // 创建时间
+    // @gotags: bson:"-" json:"create_timestamp,omitempty"
+    int64 create_timestamp = 12;
+    // 代码仓库信息
+    // @gotags: bson:"code_repository" json:"code_repository"
+    CodeRepository code_repository = 9;
+    // 镜像仓库信息
+    // @gotags: bson:"image_repository" json:"image_repository"
+    ImageRepository image_repository = 11;
+    // 服务标签
+    // @gotags: bson:"labels" json:"labels"
+    map<string, string> labels = 14;
+}
+
+message UpdateServiceRequest {
+    // book id
+    // @gotags: json:"id"
+    string id = 1;
+    // 更新模式
+    // @gotags: json:"update_mode"
+    infraboard.mcube.request.UpdateMode update_mode = 2;
+    // 更新人
+    // @gotags: json:"update_by"
+    string update_by = 3;
+    // 更新时间
+    // @gotags: json:"update_at"
+    int64 update_at = 4;
+    // 更新的书本信息
+    // @gotags: json:"spec"
+    CreateServiceRequest spec = 5;
+}
+
+message Credential {
+    // 是否启动客户端
+    // @gotags: bson:"enabled" json:"enabled"
+    bool enabled = 1;
+    // 凭证更新时间
+    // @gotags: bson:"update_at" json:"update_at"
+    int64 update_at = 2;
+    // 服务客户端ID
+    // @gotags: bson:"client_id" json:"client_id"
+    string client_id = 3;
+    // 服务客户端凭证
+    // @gotags: bson:"client_secret" json:"client_secret"
+    string client_secret = 4;
+}
+
+// SCM_TYPE 源码仓库类型
+enum SCM_PROVIDER {
+    // gitlab
+    GITLAB = 0;
+	// github
+	GITHUB = 1;
+	// coding.net
+	CODING = 2;
+}
+
+enum LANGUAGE {
+    JAVA = 0;
+    JAVASCRIPT = 1;
+    GOLANG = 2;
+    GO = 3;
+    PYTHON = 4;
+    PHP = 5;
+    C_SHARP = 6;
+    C = 7;
+    C_PLUS_PLUS = 8;
+    SWIFT = 9;
+    OBJECT_C = 10;
+    RUST = 11;
+    RUBY = 12;
+    DART = 13;
+    KOTLIN = 14;
+    SHELL = 15;
+    POWER_SHELL = 16;
+}
+
+// 服务代码仓库信息
+message CodeRepository {
+    // 仓库提供商
+    // @gotags: bson:"provider" json:"provider"
+    SCM_PROVIDER provider = 1;
+    // token 操作仓库, 比如设置回调
+    // @gotags: bson:"token" json:"token,omitempty"
+    string token = 2;
+    // 仓库对应的项目Id
+    // @gotags: bson:"project_id" json:"project_id"
+    string project_id = 3;
+    // 仓库对应空间
+    // @gotags: bson:"namespace" json:"namespace"
+    string namespace = 9;
+    // 仓库web url地址
+    // @gotags: bson:"web_url" json:"web_url"
+    string web_url = 10;
+    // 仓库ssh url地址
+    // @gotags: bson:"ssh_url" json:"ssh_url"
+    string ssh_url = 4;
+    // 仓库http url地址
+    // @gotags: bson:"http_url" json:"http_url"
+    string http_url = 5;
+    // 源代码使用的编程语言, 构建时, 不同语言有不同的构建环境
+    // @gotags: bson:"language" json:"language"
+    optional LANGUAGE language = 6;
+    // 开启Hook设置
+    // @gotags: bson:"enable_hook" json:"enable_hook"
+    bool enable_hook = 7;
+    // Hook设置
+    // @gotags: bson:"hook_config" json:"hook_config"
+    string hook_config = 8;
+   // scm设置Hook后返回的id, 用于删除应用时，取消hook使用
+    // @gotags: bson:"hook_id" json:"hook_id"
+    string hook_id = 11;
+    // 仓库的创建时间
+    // @gotags: bson:"created_at" json:"created_at"
+    int64 created_at = 12;
+}
+
+// 镜像仓库
+message ImageRepository {
+    // 服务镜像地址
+    // @gotags: bson:"address" json:"address"
+    string address = 1;
+    // 镜像版本
+    // @gotags: bson:"version" json:"version"
+    string version = 2;
+}
+
+// 服务安全相关信息
+message Security {
+    // 用于加密应用的铭感信息的key
+    // @gotags: bson:"encrypt_key" json:"encrypt_key"
+    string encrypt_key = 1;
+}
+
+message ServiceSet {
+    // @gotags: bson:"total" json:"total"
+    int64 total = 1;
+    // @gotags: bson:"items" json:"items"
+    repeated Service items = 2;
+}
