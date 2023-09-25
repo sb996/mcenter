@@ -8,8 +8,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/infraboard/mcenter/apps/counter"
-	"github.com/infraboard/mcenter/conf"
+	"github.com/sb996/mcenter/apps/counter"
+	"github.com/sb996/mcenter/conf"
 	"github.com/infraboard/mcube/ioc"
 )
 

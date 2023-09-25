@@ -7,8 +7,8 @@ import (
 
 	"github.com/infraboard/mcube/exception"
 
-	"github.com/infraboard/mcenter/apps/ip2region"
-	"github.com/infraboard/mcenter/apps/storage"
+	"github.com/sb996/mcenter/apps/ip2region"
+	"github.com/sb996/mcenter/apps/storage"
 )
 
 func (s *service) UpdateDBFile(req *ip2region.UpdateDBFileRequest) error {

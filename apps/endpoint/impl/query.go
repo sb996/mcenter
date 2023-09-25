@@ -6,7 +6,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/endpoint"
 	"github.com/infraboard/mcube/exception"
 )
 

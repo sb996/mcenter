@@ -3,9 +3,9 @@ package impl_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/label"
-	"github.com/infraboard/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/label"
+	"github.com/sb996/mcenter/apps/namespace"
 	"github.com/infraboard/mcube/pb/resource"
 )
 

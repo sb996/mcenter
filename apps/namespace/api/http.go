@@ -5,7 +5,7 @@ import (
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
 
-	"github.com/infraboard/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/namespace"
 )
 
 func init() {

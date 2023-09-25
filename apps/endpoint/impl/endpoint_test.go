@@ -3,7 +3,7 @@ package impl_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/endpoint"
 )
 
 func TestCreateRole(t *testing.T) {

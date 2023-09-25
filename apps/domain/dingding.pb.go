@@ -135,7 +135,7 @@ func file_mcenter_apps_domain_pb_dingding_proto_rawDescGZIP() []byte {
 
 var file_mcenter_apps_domain_pb_dingding_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_mcenter_apps_domain_pb_dingding_proto_goTypes = []interface{}{
-	(*DingDingConfig)(nil), // 0: infraboard.mcenter.domain.DingDingConfig
+	(*DingDingConfig)(nil), // 0: sb996.mcenter.domain.DingDingConfig
 }
 var file_mcenter_apps_domain_pb_dingding_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

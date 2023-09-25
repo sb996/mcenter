@@ -3,9 +3,9 @@ package api
 import (
 	restfulspec "github.com/emicklei/go-restful-openapi/v2"
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/user"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/user"
 	"github.com/infraboard/mcube/http/label"
 	"github.com/infraboard/mcube/http/restful/response"
 )

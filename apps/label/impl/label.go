@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/imdario/mergo"
-	"github.com/infraboard/mcenter/apps/label"
+	"github.com/sb996/mcenter/apps/label"
 	"github.com/infraboard/mcube/exception"
 	"github.com/infraboard/mcube/pb/request"
 	"go.mongodb.org/mongo-driver/bson"

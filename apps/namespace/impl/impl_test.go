@@ -3,8 +3,8 @@ package impl_test
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/test/tools"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/test/tools"
 	"github.com/infraboard/mcube/ioc"
 )
 

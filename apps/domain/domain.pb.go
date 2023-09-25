@@ -7,7 +7,7 @@
 package domain
 
 import (
-	notify "github.com/infraboard/mcenter/apps/notify"
+	notify "github.com/sb996/mcenter/apps/notify"
 	resource "github.com/infraboard/mcube/pb/resource"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"

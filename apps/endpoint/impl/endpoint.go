@@ -7,8 +7,8 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/service"
 )
 
 func (s *impl) DescribeEndpoint(ctx context.Context, req *endpoint.DescribeEndpointRequest) (

@@ -3,7 +3,7 @@ package instance_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/instance"
+	"github.com/sb996/mcenter/apps/instance"
 )
 
 func TestParseStrLable(t *testing.T) {

@@ -10,8 +10,8 @@ import (
 
 	"github.com/go-playground/validator/v10"
 
-	notify "github.com/infraboard/mcenter/apps/notify"
-	"github.com/infraboard/mcenter/common/format"
+	notify "github.com/sb996/mcenter/apps/notify"
+	"github.com/sb996/mcenter/common/format"
 	request "github.com/infraboard/mcube/http/request"
 	pb_request "github.com/infraboard/mcube/pb/request"
 	"github.com/infraboard/mcube/pb/resource"

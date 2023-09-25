@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package infraboard.mcenter.domain;
-option go_package = "github.com/infraboard/mcenter/apps/domain";
+package sb996.mcenter.domain;
+option go_package = "github.com/sb996/mcenter/apps/domain";
 
 import "mcube/pb/page/page.proto";
 import "mcube/pb/request/request.proto";
@@ -31,7 +31,7 @@ message DescribeDomainRequest {
 message UpdateDomainRequest  {
     // 更新模式
     // @gotags: json:"update_mode"
-    infraboard.mcube.request.UpdateMode update_mode = 1;
+    sb996.mcube.request.UpdateMode update_mode = 1;
     // 公司或者组织Id
     // @gotags: json:"id"
     string id = 2;
@@ -53,7 +53,7 @@ enum DESCRIBE_BY {
 message QueryDomainRequest {
     // 分页参数
     // @gotags: json:"page"
-    infraboard.mcube.page.PageRequest page = 1;
+    sb996.mcube.page.PageRequest page = 1;
     // Domain 相关Id
     // @gotags: json:"ids" 
     repeated string ids = 2;

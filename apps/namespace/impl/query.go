@@ -5,7 +5,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/infraboard/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/namespace"
 )
 
 func newPaggingQuery(req *namespace.QueryNamespaceRequest) *queryNamespaceRequest {

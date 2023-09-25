@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/token"
 	"github.com/infraboard/mcube/http/request"
 	"github.com/infraboard/mcube/tools/pretty"
 )

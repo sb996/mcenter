@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package infraboard.mcenter.endpoint;
-option go_package = "github.com/infraboard/mcenter/apps/endpoint";
+option go_package = "github.com/sb996/mcenter/apps/endpoint";
 
 // Endpoint Service's features
 message Endpoint {

@@ -8,8 +8,8 @@ import (
 	"github.com/infraboard/mcube/logger/zap"
 	"google.golang.org/grpc"
 
-	"github.com/infraboard/mcenter/apps/label"
-	"github.com/infraboard/mcenter/conf"
+	"github.com/sb996/mcenter/apps/label"
+	"github.com/sb996/mcenter/conf"
 )
 
 func init() {

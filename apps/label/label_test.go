@@ -3,7 +3,7 @@ package label_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/label"
+	"github.com/sb996/mcenter/apps/label"
 )
 
 func TestBuildLabelValue(t *testing.T) {

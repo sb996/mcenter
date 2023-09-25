@@ -8,8 +8,8 @@ import (
 	"github.com/infraboard/mcube/http/request"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/policy"
 )
 
 func (s *impl) CreateNamespace(ctx context.Context, req *namespace.CreateNamespaceRequest) (

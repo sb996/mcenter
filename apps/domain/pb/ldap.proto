@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package infraboard.mcenter.domain;
-option go_package = "github.com/infraboard/mcenter/apps/domain";
+package sb996.mcenter.domain;
+option go_package = "github.com/sb996/mcenter/apps/domain";
 
 message LdapConfig {
     // 开启LDAP认证

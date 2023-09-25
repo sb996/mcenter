@@ -7,8 +7,8 @@ import (
 
 	"github.com/emicklei/go-restful/v3"
 	"github.com/go-playground/validator/v10"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/common/format"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/common/format"
 	"github.com/infraboard/mcube/exception"
 	request "github.com/infraboard/mcube/http/request"
 	resource "github.com/infraboard/mcube/pb/resource"

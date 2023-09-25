@@ -6,8 +6,8 @@ import (
 
 	"google.golang.org/grpc/metadata"
 
-	"github.com/infraboard/mcenter/apps/instance"
-	"github.com/infraboard/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/instance"
+	"github.com/sb996/mcenter/apps/service"
 )
 
 func TestSearch(t *testing.T) {
