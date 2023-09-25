@@ -7,9 +7,9 @@ import (
 	"sync"
 
 	"github.com/go-gomail/gomail"
-	"github.com/infraboard/mcenter/apps/notify"
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/notify"
 )
 
 const (

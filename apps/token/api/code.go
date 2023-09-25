@@ -9,7 +9,7 @@ import (
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
 
-	"github.com/infraboard/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 func init() {

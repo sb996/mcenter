@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package infraboard.mcenter.notify;
-option go_package = "github.com/infraboard/mcenter/apps/notify";
+package sb996.mcenter.notify;
+option go_package = "github.com/sb996/mcenter/apps/notify";
 
 import "mcenter/apps/notify/pb/notify.proto";
 

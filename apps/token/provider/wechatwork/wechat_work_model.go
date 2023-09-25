@@ -3,8 +3,8 @@ package wechatwork
 import (
 	"strings"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/user"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/user"
 )
 
 // 获取access_token https://developer.work.weixin.qq.com/document/path/91039

@@ -5,17 +5,17 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/notify"
-	"github.com/infraboard/mcenter/apps/notify/provider/im"
-	"github.com/infraboard/mcenter/apps/notify/provider/im/feishu"
-	"github.com/infraboard/mcenter/apps/notify/provider/mail"
-	"github.com/infraboard/mcenter/apps/notify/provider/sms"
-	"github.com/infraboard/mcenter/apps/notify/provider/sms/tencent"
-	"github.com/infraboard/mcenter/apps/notify/provider/voice"
-	vtencent "github.com/infraboard/mcenter/apps/notify/provider/voice/tencent"
-	"github.com/infraboard/mcenter/apps/user"
 	"github.com/infraboard/mcube/exception"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/notify"
+	"github.com/sb996/mcenter/apps/notify/provider/im"
+	"github.com/sb996/mcenter/apps/notify/provider/im/feishu"
+	"github.com/sb996/mcenter/apps/notify/provider/mail"
+	"github.com/sb996/mcenter/apps/notify/provider/sms"
+	"github.com/sb996/mcenter/apps/notify/provider/sms/tencent"
+	"github.com/sb996/mcenter/apps/notify/provider/voice"
+	vtencent "github.com/sb996/mcenter/apps/notify/provider/voice/tencent"
+	"github.com/sb996/mcenter/apps/user"
 )
 
 // 邮件通知

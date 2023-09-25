@@ -3,7 +3,7 @@ package feishu
 import (
 	"strings"
 
-	"github.com/infraboard/mcenter/apps/user"
+	"github.com/sb996/mcenter/apps/user"
 )
 
 func NewUser() *User {

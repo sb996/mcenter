@@ -12,8 +12,8 @@ import (
 	"github.com/infraboard/mcube/logger/zap"
 	"google.golang.org/grpc"
 
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/conf"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/conf"
 )
 
 func init() {

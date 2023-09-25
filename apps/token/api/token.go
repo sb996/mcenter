@@ -9,8 +9,8 @@ import (
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
 
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/user"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/user"
 )
 
 func init() {

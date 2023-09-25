@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/clients/rest"
-	"github.com/infraboard/mcenter/test/tools"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/clients/rest"
+	"github.com/sb996/mcenter/test/tools"
 )
 
 var (

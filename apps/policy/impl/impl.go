@@ -8,12 +8,12 @@ import (
 	"github.com/infraboard/mcube/logger/zap"
 	"google.golang.org/grpc"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/role"
-	"github.com/infraboard/mcenter/apps/user"
-	"github.com/infraboard/mcenter/conf"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/user"
+	"github.com/sb996/mcenter/conf"
 )
 
 func init() {

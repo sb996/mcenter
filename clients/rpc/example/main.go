@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/infraboard/mcenter/clients/rpc"
+	"github.com/sb996/mcenter/clients/rpc"
 )
 
 func main() {

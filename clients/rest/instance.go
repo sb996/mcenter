@@ -3,8 +3,8 @@ package rest
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/instance"
 	"github.com/infraboard/mcube/client/rest"
+	"github.com/sb996/mcenter/apps/instance"
 )
 
 type InstanceService interface {

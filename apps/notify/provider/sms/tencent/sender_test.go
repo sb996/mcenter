@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/caarlos0/env/v6"
-	"github.com/infraboard/mcenter/apps/notify"
-	"github.com/infraboard/mcenter/apps/notify/provider/sms"
-	"github.com/infraboard/mcenter/apps/notify/provider/sms/tencent"
+	"github.com/sb996/mcenter/apps/notify"
+	"github.com/sb996/mcenter/apps/notify/provider/sms"
+	"github.com/sb996/mcenter/apps/notify/provider/sms/tencent"
 )
 
 var (

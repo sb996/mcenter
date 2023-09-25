@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RPC_ValidateToken_FullMethodName = "/infraboard.mcenter.token.RPC/ValidateToken"
-	RPC_VerifyCode_FullMethodName    = "/infraboard.mcenter.token.RPC/VerifyCode"
+	RPC_ValidateToken_FullMethodName = "/sb996.mcenter.token.RPC/ValidateToken"
+	RPC_VerifyCode_FullMethodName    = "/sb996.mcenter.token.RPC/VerifyCode"
 )
 
 // RPCClient is the client API for RPC service.
@@ -133,7 +133,7 @@ func _RPC_VerifyCode_Handler(srv interface{}, ctx context.Context, dec func(inte
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RPC_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "infraboard.mcenter.token.RPC",
+	ServiceName: "sb996.mcenter.token.RPC",
 	HandlerType: (*RPCServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package infraboard.mcenter.role;
-option go_package = "github.com/infraboard/mcenter/apps/role";
+package sb996.mcenter.role;
+option go_package = "github.com/sb996/mcenter/apps/role";
 
 import "mcube/pb/page/page.proto";
 import "mcube/pb/resource/meta.proto";

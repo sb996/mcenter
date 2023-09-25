@@ -3,9 +3,9 @@ package impl_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/policy"
 )
 
 func TestCheckPermissionOk(t *testing.T) {

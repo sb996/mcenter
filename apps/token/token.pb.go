@@ -7,7 +7,7 @@
 package token
 
 import (
-	user "github.com/infraboard/mcenter/apps/user"
+	user "github.com/sb996/mcenter/apps/user"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

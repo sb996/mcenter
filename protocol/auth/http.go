@@ -5,17 +5,17 @@ import (
 	"time"
 
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/user"
-	"github.com/infraboard/mcenter/version"
 	"github.com/infraboard/mcube/cache"
 	"github.com/infraboard/mcube/exception"
 	"github.com/infraboard/mcube/http/restful/response"
 	"github.com/infraboard/mcube/ioc"
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/user"
+	"github.com/sb996/mcenter/version"
 	"go.opentelemetry.io/otel/trace"
 )
 

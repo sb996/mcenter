@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/infraboard/mcenter/common/validate"
+	"github.com/sb996/mcenter/common/validate"
 )
 
 type SmsNotifyer interface {

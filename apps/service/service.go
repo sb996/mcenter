@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/infraboard/mcenter/apps/service/provider/gitlab"
-	"github.com/infraboard/mcenter/common/format"
 	"github.com/infraboard/mcube/pb/resource"
+	"github.com/sb996/mcenter/apps/service/provider/gitlab"
+	"github.com/sb996/mcenter/common/format"
 	"google.golang.org/grpc/metadata"
 )
 

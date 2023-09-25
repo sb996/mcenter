@@ -9,8 +9,8 @@ import (
 	"go.mongodb.org/mongo-driver/x/bsonx"
 	"google.golang.org/grpc"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/conf"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/conf"
 )
 
 func init() {

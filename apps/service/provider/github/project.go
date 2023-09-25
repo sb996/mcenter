@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/google/go-github/v45/github"
-	"github.com/infraboard/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/service"
 )
 
 func (s *Github) ListOrganizations(ctx context.Context) (*service.ServiceSet, error) {

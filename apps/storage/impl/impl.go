@@ -6,8 +6,8 @@ import (
 	"github.com/infraboard/mcube/logger/zap"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/infraboard/mcenter/apps/storage"
-	"github.com/infraboard/mcenter/conf"
+	"github.com/sb996/mcenter/apps/storage"
+	"github.com/sb996/mcenter/conf"
 )
 
 func init() {

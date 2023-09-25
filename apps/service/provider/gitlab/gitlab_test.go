@@ -3,8 +3,8 @@ package gitlab_test
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/service/provider/gitlab"
-	"github.com/infraboard/mcenter/test/tools"
+	"github.com/sb996/mcenter/apps/service/provider/gitlab"
+	"github.com/sb996/mcenter/test/tools"
 )
 
 var (

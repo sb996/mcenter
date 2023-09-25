@@ -10,10 +10,10 @@ import (
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/ip2region"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/user"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/ip2region"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/user"
 )
 
 // NewChecker todo

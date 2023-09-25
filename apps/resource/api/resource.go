@@ -2,8 +2,8 @@ package api
 
 import (
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcenter/apps/resource"
 	"github.com/infraboard/mcube/http/restful/response"
+	"github.com/sb996/mcenter/apps/resource"
 )
 
 func (h *handler) QueryResources(r *restful.Request, w *restful.Response) {

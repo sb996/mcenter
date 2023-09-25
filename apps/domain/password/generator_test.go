@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/domain/password"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/domain/password"
 	"github.com/stretchr/testify/assert"
 )
 

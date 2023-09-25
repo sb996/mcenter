@@ -19,10 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RPC_ValidateCredential_FullMethodName = "/infraboard.mcenter.service.RPC/ValidateCredential"
-	RPC_QueryService_FullMethodName       = "/infraboard.mcenter.service.RPC/QueryService"
-	RPC_DescribeService_FullMethodName    = "/infraboard.mcenter.service.RPC/DescribeService"
-	RPC_QueryGitlabProject_FullMethodName = "/infraboard.mcenter.service.RPC/QueryGitlabProject"
+	RPC_ValidateCredential_FullMethodName = "/sb996.mcenter.service.RPC/ValidateCredential"
+	RPC_QueryService_FullMethodName       = "/sb996.mcenter.service.RPC/QueryService"
+	RPC_DescribeService_FullMethodName    = "/sb996.mcenter.service.RPC/DescribeService"
+	RPC_QueryGitlabProject_FullMethodName = "/sb996.mcenter.service.RPC/QueryGitlabProject"
 )
 
 // RPCClient is the client API for RPC service.
@@ -195,7 +195,7 @@ func _RPC_QueryGitlabProject_Handler(srv interface{}, ctx context.Context, dec f
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RPC_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "infraboard.mcenter.service.RPC",
+	ServiceName: "sb996.mcenter.service.RPC",
 	HandlerType: (*RPCServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

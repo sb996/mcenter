@@ -3,8 +3,8 @@ package tracer
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/conf"
-	"github.com/infraboard/mcenter/version"
+	"github.com/sb996/mcenter/conf"
+	"github.com/sb996/mcenter/version"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/jaeger"
 	"go.opentelemetry.io/otel/propagation"

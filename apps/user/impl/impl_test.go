@@ -3,9 +3,9 @@ package impl_test
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/user"
-	"github.com/infraboard/mcenter/test/tools"
 	"github.com/infraboard/mcube/ioc"
+	"github.com/sb996/mcenter/apps/user"
+	"github.com/sb996/mcenter/test/tools"
 )
 
 var (

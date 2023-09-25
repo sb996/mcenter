@@ -1,7 +1,7 @@
 package tools
 
 import (
-	"github.com/infraboard/mcenter/common/format"
+	"github.com/sb996/mcenter/common/format"
 	"sigs.k8s.io/yaml"
 )
 

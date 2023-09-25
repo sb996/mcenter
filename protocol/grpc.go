@@ -11,9 +11,9 @@ import (
 	"github.com/infraboard/mcube/logger/zap"
 	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"
 
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/conf"
-	"github.com/infraboard/mcenter/protocol/auth"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/conf"
+	"github.com/sb996/mcenter/protocol/auth"
 )
 
 // NewGRPCService todo

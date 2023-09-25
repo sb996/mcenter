@@ -7,10 +7,10 @@ import (
 	"github.com/infraboard/mcube/exception"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/role"
-	"github.com/infraboard/mcenter/apps/user"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/user"
 )
 
 func (s *impl) CreatePolicy(ctx context.Context, req *policy.CreatePolicyRequest) (

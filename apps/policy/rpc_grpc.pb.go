@@ -8,7 +8,7 @@ package policy
 
 import (
 	context "context"
-	role "github.com/infraboard/mcenter/apps/role"
+	role "github.com/sb996/mcenter/apps/role"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -20,11 +20,11 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RPC_CreatePolicy_FullMethodName    = "/infraboard.mcenter.policy.RPC/CreatePolicy"
-	RPC_QueryPolicy_FullMethodName     = "/infraboard.mcenter.policy.RPC/QueryPolicy"
-	RPC_DescribePolicy_FullMethodName  = "/infraboard.mcenter.policy.RPC/DescribePolicy"
-	RPC_DeletePolicy_FullMethodName    = "/infraboard.mcenter.policy.RPC/DeletePolicy"
-	RPC_CheckPermission_FullMethodName = "/infraboard.mcenter.policy.RPC/CheckPermission"
+	RPC_CreatePolicy_FullMethodName    = "/sb996.mcenter.policy.RPC/CreatePolicy"
+	RPC_QueryPolicy_FullMethodName     = "/sb996.mcenter.policy.RPC/QueryPolicy"
+	RPC_DescribePolicy_FullMethodName  = "/sb996.mcenter.policy.RPC/DescribePolicy"
+	RPC_DeletePolicy_FullMethodName    = "/sb996.mcenter.policy.RPC/DeletePolicy"
+	RPC_CheckPermission_FullMethodName = "/sb996.mcenter.policy.RPC/CheckPermission"
 )
 
 // RPCClient is the client API for RPC service.
@@ -239,7 +239,7 @@ func _RPC_CheckPermission_Handler(srv interface{}, ctx context.Context, dec func
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RPC_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "infraboard.mcenter.policy.RPC",
+	ServiceName: "sb996.mcenter.policy.RPC",
 	HandlerType: (*RPCServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

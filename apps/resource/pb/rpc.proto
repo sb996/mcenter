@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package infraboard.mcenter.resource;
-option go_package = "github.com/infraboard/mcenter/apps/resource";
+package sb996.mcenter.resource;
+option go_package = "github.com/sb996/mcenter/apps/resource";
 
 import "mcube/pb/page/page.proto";
 import "mcenter/apps/resource/pb/resource.proto";

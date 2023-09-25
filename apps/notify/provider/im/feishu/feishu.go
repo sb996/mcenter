@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/notify/provider/im"
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
 	lark "github.com/larksuite/oapi-sdk-go/v3"
 	larkcard "github.com/larksuite/oapi-sdk-go/v3/card"
 	larkim "github.com/larksuite/oapi-sdk-go/v3/service/im/v1"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/notify/provider/im"
 )
 
 func NewFeishuNotifyer(conf *domain.FeishuConfig) im.ImNotifyer {

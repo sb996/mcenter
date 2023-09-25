@@ -3,9 +3,9 @@ package feishu
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/domain"
 	"github.com/infraboard/mcube/logger"
 	lark "github.com/larksuite/oapi-sdk-go/v3"
+	"github.com/sb996/mcenter/apps/domain"
 )
 
 type Feishu struct {

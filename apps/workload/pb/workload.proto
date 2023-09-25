@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package infraboard.mcenter.workload;
-option go_package = "github.com/infraboard/mcenter/apps/workload";
+package sb996.mcenter.workload;
+option go_package = "github.com/sb996/mcenter/apps/workload";
 
 message WorkLoad {
     // 用户

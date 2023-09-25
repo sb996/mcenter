@@ -6,13 +6,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/infraboard/mcenter/cmd/initial"
-	"github.com/infraboard/mcenter/cmd/start"
-	"github.com/infraboard/mcenter/conf"
-	"github.com/infraboard/mcenter/tracer"
-	"github.com/infraboard/mcenter/version"
 	"github.com/infraboard/mcube/ioc"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/cmd/initial"
+	"github.com/sb996/mcenter/cmd/start"
+	"github.com/sb996/mcenter/conf"
+	"github.com/sb996/mcenter/tracer"
+	"github.com/sb996/mcenter/version"
 )
 
 var (

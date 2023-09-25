@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/clients/rpc"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/clients/rpc"
 )
 
 func NewEndpointRegister() *EndpointRegister {

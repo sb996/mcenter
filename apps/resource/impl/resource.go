@@ -3,9 +3,9 @@ package impl
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/resource"
 	"github.com/infraboard/mcube/http/request"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/resource"
 )
 
 const (

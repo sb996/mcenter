@@ -4,9 +4,9 @@ import (
 	"context"
 
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/user"
 	"github.com/infraboard/mcube/client/rest"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/user"
 )
 
 func NewDingDingClient(conf *domain.DingDingConfig) *DingDing {

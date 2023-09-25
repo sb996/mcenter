@@ -3,7 +3,7 @@ package security
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 // Checker 安全检测

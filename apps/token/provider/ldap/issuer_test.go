@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/token/provider"
-	"github.com/infraboard/mcenter/test/tools"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/token/provider"
+	"github.com/sb996/mcenter/test/tools"
 )
 
 var (

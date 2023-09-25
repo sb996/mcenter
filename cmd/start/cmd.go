@@ -11,11 +11,11 @@ import (
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
 
-	"github.com/infraboard/mcenter/conf"
-	"github.com/infraboard/mcenter/protocol"
+	"github.com/sb996/mcenter/conf"
+	"github.com/sb996/mcenter/protocol"
 
 	// 注册所有服务
-	_ "github.com/infraboard/mcenter/apps"
+	_ "github.com/sb996/mcenter/apps"
 )
 
 // startCmd represents the start command

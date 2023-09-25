@@ -3,8 +3,8 @@ package initial
 import (
 	"fmt"
 
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/service"
 )
 
 func NewInitApps() *InitApps {

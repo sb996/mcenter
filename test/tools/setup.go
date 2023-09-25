@@ -3,15 +3,15 @@ package tools
 import (
 	"os"
 
-	"github.com/infraboard/mcenter/conf"
-	"github.com/infraboard/mcenter/tracer"
 	"github.com/infraboard/mcube/cache"
 	"github.com/infraboard/mcube/cache/memory"
 	"github.com/infraboard/mcube/ioc"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/conf"
+	"github.com/sb996/mcenter/tracer"
 
 	// 注册所有服务
-	_ "github.com/infraboard/mcenter/apps"
+	_ "github.com/sb996/mcenter/apps"
 )
 
 func DevelopmentSetup() {

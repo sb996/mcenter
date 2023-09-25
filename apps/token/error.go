@@ -1,8 +1,8 @@
 package token
 
 import (
-	"github.com/infraboard/mcenter/version"
 	"github.com/infraboard/mcube/exception"
+	"github.com/sb996/mcenter/version"
 )
 
 var (

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/infraboard/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 var (

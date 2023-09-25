@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/infraboard/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/domain"
 )
 
 // Generator is what generates the password

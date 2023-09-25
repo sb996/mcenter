@@ -19,10 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RPC_QueryRole_FullMethodName          = "/infraboard.mcenter.role.RPC/QueryRole"
-	RPC_DescribeRole_FullMethodName       = "/infraboard.mcenter.role.RPC/DescribeRole"
-	RPC_QueryPermission_FullMethodName    = "/infraboard.mcenter.role.RPC/QueryPermission"
-	RPC_DescribePermission_FullMethodName = "/infraboard.mcenter.role.RPC/DescribePermission"
+	RPC_QueryRole_FullMethodName          = "/sb996.mcenter.role.RPC/QueryRole"
+	RPC_DescribeRole_FullMethodName       = "/sb996.mcenter.role.RPC/DescribeRole"
+	RPC_QueryPermission_FullMethodName    = "/sb996.mcenter.role.RPC/QueryPermission"
+	RPC_DescribePermission_FullMethodName = "/sb996.mcenter.role.RPC/DescribePermission"
 )
 
 // RPCClient is the client API for RPC service.
@@ -195,7 +195,7 @@ func _RPC_DescribePermission_Handler(srv interface{}, ctx context.Context, dec f
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RPC_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "infraboard.mcenter.role.RPC",
+	ServiceName: "sb996.mcenter.role.RPC",
 	HandlerType: (*RPCServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -5,12 +5,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/instance"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/clients/rpc"
 	"github.com/infraboard/mcube/exception"
 	"github.com/infraboard/mcube/ioc/health"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/instance"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/clients/rpc"
 )
 
 var (

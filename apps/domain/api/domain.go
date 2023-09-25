@@ -5,8 +5,8 @@ import (
 	"github.com/infraboard/mcube/exception"
 	"github.com/infraboard/mcube/http/restful/response"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 func (h *handler) CreateDomain(r *restful.Request, w *restful.Response) {

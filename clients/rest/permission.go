@@ -3,9 +3,9 @@ package rest
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/role"
 	"github.com/infraboard/mcube/client/rest"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/role"
 )
 
 type PolicyService interface {

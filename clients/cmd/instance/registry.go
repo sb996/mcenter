@@ -3,8 +3,8 @@ package instance
 import (
 	"fmt"
 
-	"github.com/infraboard/mcenter/apps/instance"
-	"github.com/infraboard/mcenter/clients/rest"
+	"github.com/sb996/mcenter/apps/instance"
+	"github.com/sb996/mcenter/clients/rest"
 	"github.com/spf13/cobra"
 )
 

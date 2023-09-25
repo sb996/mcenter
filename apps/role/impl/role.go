@@ -8,8 +8,8 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/role"
 )
 
 func (s *impl) CreateRole(ctx context.Context, req *role.CreateRoleRequest) (*role.Role, error) {

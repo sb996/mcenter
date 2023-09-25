@@ -1,7 +1,7 @@
 PROJECT_NAME := "mcenter"
 MAIN_FILE_PAHT := "main.go"
-PKG := "github.com/infraboard/mcenter"
-IMAGE_PREFIX := "github.com/infraboard/mcenter"
+PKG := "github.com/sb996/mcenter"
+IMAGE_PREFIX := "github.com/sb996/mcenter"
 
 MOD_DIR := $(shell go env GOPATH)/pkg/mod
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/ | grep -v redis)

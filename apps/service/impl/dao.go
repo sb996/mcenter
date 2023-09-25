@@ -9,9 +9,9 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 func (i *impl) save(ctx context.Context, ins *service.Service) error {

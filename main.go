@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/infraboard/mcenter/cmd"
+	"github.com/sb996/mcenter/cmd"
 )
 
 func main() {

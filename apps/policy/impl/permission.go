@@ -3,10 +3,10 @@ package impl
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/role"
 	"github.com/infraboard/mcube/exception"
 )
 

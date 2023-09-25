@@ -3,10 +3,10 @@ package impl_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/notify"
-	"github.com/infraboard/mcenter/test/tools"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/notify"
+	"github.com/sb996/mcenter/test/tools"
 )
 
 func TestSendNotify(t *testing.T) {

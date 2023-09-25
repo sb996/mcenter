@@ -6,8 +6,8 @@ import (
 	"github.com/infraboard/mcube/ioc"
 
 	// 注册所有服务
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/test/tools"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/test/tools"
 )
 
 var (

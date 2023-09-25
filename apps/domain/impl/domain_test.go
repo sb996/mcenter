@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/caarlos0/env/v6"
-	"github.com/infraboard/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/domain"
 )
 
 func TestQueryDoamin(t *testing.T) {

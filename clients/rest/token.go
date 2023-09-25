@@ -3,8 +3,8 @@ package rest
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/token"
 	"github.com/infraboard/mcube/client/rest"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 type TokenService interface {

@@ -2,7 +2,7 @@ package gitlab
 
 import (
 	"github.com/caarlos0/env/v6"
-	"github.com/infraboard/mcenter/common/validate"
+	"github.com/sb996/mcenter/common/validate"
 )
 
 func NewDefaultConfig() *Config {

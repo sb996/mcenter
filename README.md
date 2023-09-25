@@ -3,12 +3,14 @@
 基于Etcd的微服务注册中心
 
 1. 配置MongoDB
+
 ```
 use mcenter
 db.createUser({user: "mcenter", pwd: "123456", roles: [{ role: "dbOwner", db: "mcenter" }]})
 ```
 
 2. 初始化内置服务
+
 ```
 make init
 
@@ -20,19 +22,18 @@ make init
 
 ## 架构图
 
-
 ## 项目说明
 
 ```
 ├── protocol                       # 脚手架功能: rpc / http 功能加载
-│   ├── grpc.go              
-│   └── http.go    
+│   ├── grpc.go            
+│   └── http.go  
 ├── client                         # 脚手架功能: grpc 客户端实现 
-│   ├── client.go              
-│   └── config.go    
+│   ├── client.go            
+│   └── config.go  
 ├── cmd                            # 脚手架功能: 处理程序启停参数，加载系统配置文件
-│   ├── root.go             
-│   └── start.go                
+│   ├── root.go           
+│   └── start.go              
 ├── conf                           # 脚手架功能: 配置文件加载
 │   ├── config.go                  # 配置文件定义
 │   ├── load.go                    # 不同的配置加载方式
@@ -44,7 +45,7 @@ make init
 ├── apps                            # 具体业务场景的领域包
 │   ├── all
 │   │   |-- grpc.go                # 注册所有GRPC服务模块, 暴露给框架GRPC服务器加载, 注意 导入有先后顺序。  
-│   │   |-- http.go                # 注册所有HTTP服务模块, 暴露给框架HTTP服务器加载。                    
+│   │   |-- http.go                # 注册所有HTTP服务模块, 暴露给框架HTTP服务器加载。                  
 │   │   └── internal.go            #  注册所有内部服务模块, 无须对外暴露的服务, 用于内部依赖。 
 │   ├── book                       # 具体业务场景领域服务 book
 │   │   ├── http                   # http 
@@ -59,16 +60,17 @@ make init
 │   │   ├── book.pb.go             # protobuf 生成的文件
 │   │   └── book_grpc.pb.go        # pb/book.proto 生成方法定义
 ├── version                        # 程序版本信息
-│   └── version.go                    
-├── README.md                    
+│   └── version.go                  
+├── README.md                  
 ├── main.go                        # Go程序唯一入口
 ├── Makefile                       # make 命令定义
 └── go.mod                         # go mod 依赖定义
 ```
 
-
 ## 快速开发
+
 make脚手架
+
 ```sh
 ➜  mcenter git:(master) ✗ make help
 dep                            Get the dependencies
@@ -84,6 +86,7 @@ help                           Display this help screen
 ```
 
 1. 使用安装依赖的Protobuf库(文件)
+
 ```sh
 # 把依赖的probuf文件复制到/usr/local/include
 
@@ -98,12 +101,14 @@ $ cp -rf pb  /usr/local/include/github.com/infraboard/mcube/pb
 ```
 
 2. 添加配置文件(默认读取位置: etc/mcenter.toml)
+
 ```sh
 $ 编辑样例配置文件 etc/mcenter.toml.book
 $ mv etc/mcenter.toml.book etc/mcenter.toml
 ```
 
 3. 启动服务
+
 ```sh
 # 编译protobuf文件, 生成代码
 $ make gen

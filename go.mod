@@ -1,4 +1,4 @@
-module github.com/infraboard/mcenter
+module github.com/sb996/mcenter
 
 go 1.20
 

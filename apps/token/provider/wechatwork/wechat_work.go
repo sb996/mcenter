@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/infraboard/mcenter/apps/domain"
 	"github.com/infraboard/mcube/client/rest"
+	"github.com/sb996/mcenter/apps/domain"
 )
 
 func NewWechatWorkClient(conf *domain.WechatWorkConfig) *WechatWork {

@@ -6,8 +6,8 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/infraboard/mcenter/apps/role"
-	"github.com/infraboard/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 func newDescribeRoleRequest(req *role.DescribeRoleRequest) (*describeRoleRequest, error) {

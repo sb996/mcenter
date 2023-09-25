@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RPC_SendNotify_FullMethodName  = "/infraboard.mcenter.notify.RPC/SendNotify"
-	RPC_QueryRecord_FullMethodName = "/infraboard.mcenter.notify.RPC/QueryRecord"
+	RPC_SendNotify_FullMethodName  = "/sb996.mcenter.notify.RPC/SendNotify"
+	RPC_QueryRecord_FullMethodName = "/sb996.mcenter.notify.RPC/QueryRecord"
 )
 
 // RPCClient is the client API for RPC service.
@@ -133,7 +133,7 @@ func _RPC_QueryRecord_Handler(srv interface{}, ctx context.Context, dec func(int
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RPC_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "infraboard.mcenter.notify.RPC",
+	ServiceName: "sb996.mcenter.notify.RPC",
 	HandlerType: (*RPCServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

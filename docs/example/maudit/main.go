@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/infraboard/mcenter/clients/rpc"
-	"github.com/infraboard/mcenter/clients/rpc/resolver"
+	"github.com/sb996/mcenter/clients/rpc"
+	"github.com/sb996/mcenter/clients/rpc/resolver"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

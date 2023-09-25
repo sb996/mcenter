@@ -6,16 +6,16 @@ import (
 	"strings"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/role"
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/apps/user"
 	"github.com/infraboard/mcube/ioc"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/user"
 
 	// 注册所有服务
-	_ "github.com/infraboard/mcenter/apps"
+	_ "github.com/sb996/mcenter/apps"
 )
 
 // NewInitialerFromCLI 初始化

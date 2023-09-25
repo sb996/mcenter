@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package infraboard.mcenter.label;
+package sb996.mcenter.label;
 option go_package = "github.com/sb996/mcenter/apps/label";
 
 import "mcube/pb/resource/meta.proto";

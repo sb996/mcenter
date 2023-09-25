@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package infraboard.mcenter.user;
-option go_package = "github.com/infraboard/mcenter/apps/user";
+package sb996.mcenter.user;
+option go_package = "github.com/sb996/mcenter/apps/user";
 
 import "mcube/pb/page/page.proto";
 import "mcube/pb/request/request.proto";

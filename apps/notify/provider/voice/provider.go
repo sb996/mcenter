@@ -3,8 +3,8 @@ package voice
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/notify"
-	"github.com/infraboard/mcenter/common/validate"
+	"github.com/sb996/mcenter/apps/notify"
+	"github.com/sb996/mcenter/common/validate"
 )
 
 type VoiceNotifyer interface {

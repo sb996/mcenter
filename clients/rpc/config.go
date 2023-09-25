@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/infraboard/mcenter/apps/instance"
+	"github.com/sb996/mcenter/apps/instance"
 )
 
 // NewDefaultConfig todo

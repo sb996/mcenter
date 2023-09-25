@@ -6,10 +6,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/apps/service/provider/gitlab"
 	"github.com/infraboard/mcube/exception"
 	"github.com/infraboard/mcube/pb/request"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/service/provider/gitlab"
 )
 
 func (i *impl) ValidateCredential(ctx context.Context, req *service.ValidateCredentialRequest) (

@@ -3,7 +3,7 @@ package gitlab_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/service/provider/gitlab"
+	"github.com/sb996/mcenter/apps/service/provider/gitlab"
 )
 
 func TestListProject(t *testing.T) {

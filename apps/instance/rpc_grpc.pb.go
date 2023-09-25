@@ -19,10 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RPC_RegistryInstance_FullMethodName   = "/infraboard.mcenter.instance.RPC/RegistryInstance"
-	RPC_UnRegistryInstance_FullMethodName = "/infraboard.mcenter.instance.RPC/UnRegistryInstance"
-	RPC_DescribeInstance_FullMethodName   = "/infraboard.mcenter.instance.RPC/DescribeInstance"
-	RPC_Search_FullMethodName             = "/infraboard.mcenter.instance.RPC/Search"
+	RPC_RegistryInstance_FullMethodName   = "/sb996.mcenter.instance.RPC/RegistryInstance"
+	RPC_UnRegistryInstance_FullMethodName = "/sb996.mcenter.instance.RPC/UnRegistryInstance"
+	RPC_DescribeInstance_FullMethodName   = "/sb996.mcenter.instance.RPC/DescribeInstance"
+	RPC_Search_FullMethodName             = "/sb996.mcenter.instance.RPC/Search"
 )
 
 // RPCClient is the client API for RPC service.
@@ -203,7 +203,7 @@ func _RPC_Search_Handler(srv interface{}, ctx context.Context, dec func(interfac
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RPC_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "infraboard.mcenter.instance.RPC",
+	ServiceName: "sb996.mcenter.instance.RPC",
 	HandlerType: (*RPCServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

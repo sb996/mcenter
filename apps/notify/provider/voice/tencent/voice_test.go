@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/notify"
-	"github.com/infraboard/mcenter/apps/notify/provider/voice"
-	"github.com/infraboard/mcenter/apps/notify/provider/voice/tencent"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/notify"
+	"github.com/sb996/mcenter/apps/notify/provider/voice"
+	"github.com/sb996/mcenter/apps/notify/provider/voice/tencent"
 )
 
 var (

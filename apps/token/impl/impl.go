@@ -12,16 +12,16 @@ import (
 	"go.mongodb.org/mongo-driver/x/bsonx"
 	"google.golang.org/grpc"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/notify"
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/token/provider"
-	"github.com/infraboard/mcenter/apps/token/security"
-	"github.com/infraboard/mcenter/conf"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/notify"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/token/provider"
+	"github.com/sb996/mcenter/apps/token/security"
+	"github.com/sb996/mcenter/conf"
 
-	_ "github.com/infraboard/mcenter/apps/token/provider/all"
+	_ "github.com/sb996/mcenter/apps/token/provider/all"
 )
 
 func init() {

@@ -15,11 +15,11 @@ import (
 	"github.com/infraboard/mcube/tools/pretty"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/namespace"
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/service/provider/gitlab"
-	"github.com/infraboard/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/namespace"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/service/provider/gitlab"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 const (

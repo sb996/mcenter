@@ -3,10 +3,10 @@ package api
 import (
 	restfulspec "github.com/emicklei/go-restful-openapi/v2"
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcenter/apps/role"
-	"github.com/infraboard/mcenter/apps/token"
 	"github.com/infraboard/mcube/http/label"
 	"github.com/infraboard/mcube/http/restful/response"
+	"github.com/sb996/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/token"
 )
 
 func (h *handler) Registry(ws *restful.WebService) {

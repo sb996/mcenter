@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RPC_QueryLabel_FullMethodName    = "/infraboard.mcenter.label.RPC/QueryLabel"
-	RPC_DescribeLabel_FullMethodName = "/infraboard.mcenter.label.RPC/DescribeLabel"
+	RPC_QueryLabel_FullMethodName    = "/sb996.mcenter.label.RPC/QueryLabel"
+	RPC_DescribeLabel_FullMethodName = "/sb996.mcenter.label.RPC/DescribeLabel"
 )
 
 // RPCClient is the client API for RPC service.
@@ -133,7 +133,7 @@ func _RPC_DescribeLabel_Handler(srv interface{}, ctx context.Context, dec func(i
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RPC_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "infraboard.mcenter.label.RPC",
+	ServiceName: "sb996.mcenter.label.RPC",
 	HandlerType: (*RPCServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

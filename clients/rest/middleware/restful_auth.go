@@ -10,12 +10,12 @@ import (
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/service"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/user"
-	"github.com/infraboard/mcenter/clients/rest"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/user"
+	"github.com/sb996/mcenter/clients/rest"
 )
 
 // RestfulServerInterceptor go-restful认证中间件

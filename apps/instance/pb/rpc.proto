@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package infraboard.mcenter.instance;
+package sb996.mcenter.instance;
 option go_package = "github.com/sb996/mcenter/apps/instance";
 
 import "mcube/pb/page/page.proto";

@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/service/provider/github"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/service/provider/github"
 )
 
 var (

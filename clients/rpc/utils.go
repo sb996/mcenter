@@ -3,7 +3,7 @@ package rpc
 import (
 	"context"
 
-	"github.com/infraboard/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/service"
 	"google.golang.org/grpc/metadata"
 )
 

@@ -7,9 +7,9 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"google.golang.org/grpc"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/resource"
-	"github.com/infraboard/mcenter/conf"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/resource"
+	"github.com/sb996/mcenter/conf"
 )
 
 func init() {

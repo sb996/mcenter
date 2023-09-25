@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/go-ldap/ldap/v3"
-	"github.com/infraboard/mcenter/apps/domain"
 	"github.com/infraboard/mcube/exception"
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/domain"
 )
 
 // OWASP recommends to escape some special characters.

@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/user"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/user"
 )
 
 func TestCreateSupperUser(t *testing.T) {

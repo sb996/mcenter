@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
 	"github.com/infraboard/mcube/exception"
 	request "github.com/infraboard/mcube/http/request"
+	"github.com/sb996/mcenter/apps/endpoint"
 )
 
 const (

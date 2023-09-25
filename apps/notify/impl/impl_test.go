@@ -4,9 +4,9 @@ import (
 	"context"
 
 	// 注册所有服务
-	"github.com/infraboard/mcenter/apps/notify"
-	"github.com/infraboard/mcenter/test/tools"
 	"github.com/infraboard/mcube/ioc"
+	"github.com/sb996/mcenter/apps/notify"
+	"github.com/sb996/mcenter/test/tools"
 )
 
 var (

@@ -13,9 +13,9 @@ import (
 	"github.com/infraboard/mcube/pb/resource"
 	"go.mongodb.org/mongo-driver/bson"
 
-	"github.com/infraboard/mcenter/apps/role"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/common/format"
+	"github.com/sb996/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/common/format"
 )
 
 // use a single instance of Validate, it caches struct info

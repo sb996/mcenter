@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/caarlos0/env/v6"
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/token/provider/dingding"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/token/provider/dingding"
 )
 
 var (

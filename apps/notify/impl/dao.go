@@ -1,7 +1,7 @@
 package impl
 
 import (
-	"github.com/infraboard/mcenter/apps/notify"
+	"github.com/sb996/mcenter/apps/notify"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

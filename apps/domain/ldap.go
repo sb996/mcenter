@@ -48,7 +48,8 @@ func (c *LdapConfig) getBaseDN(entry string) []string {
 }
 
 func (c *LdapConfig) DeSense() {
-	c.BindPassword = sense.ShortDesenser.DeSense(c.BindPassword)
+	// c.BindPassword = sense.ShortDesenser.DeSense(c.BindPassword)
+	c.BindPassword = sense.DeSense(c.BindPassword)
 }
 
 // Validate todo

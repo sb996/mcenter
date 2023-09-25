@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RPC_QueryNamespace_FullMethodName    = "/infraboard.mcenter.namespace.RPC/QueryNamespace"
-	RPC_DescribeNamespace_FullMethodName = "/infraboard.mcenter.namespace.RPC/DescribeNamespace"
+	RPC_QueryNamespace_FullMethodName    = "/sb996.mcenter.namespace.RPC/QueryNamespace"
+	RPC_DescribeNamespace_FullMethodName = "/sb996.mcenter.namespace.RPC/DescribeNamespace"
 )
 
 // RPCClient is the client API for RPC service.
@@ -129,7 +129,7 @@ func _RPC_DescribeNamespace_Handler(srv interface{}, ctx context.Context, dec fu
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RPC_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "infraboard.mcenter.namespace.RPC",
+	ServiceName: "sb996.mcenter.namespace.RPC",
 	HandlerType: (*RPCServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

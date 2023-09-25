@@ -1,6 +1,6 @@
 package password
 
-import "github.com/infraboard/mcenter/apps/domain"
+import "github.com/sb996/mcenter/apps/domain"
 
 const (
 	// LengthWeak weak length password

@@ -6,8 +6,8 @@ import (
 	"github.com/infraboard/mcube/logger/zap"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/infraboard/mcenter/apps/domain"
-	"github.com/infraboard/mcenter/apps/token/provider/ldap"
+	"github.com/sb996/mcenter/apps/domain"
+	"github.com/sb996/mcenter/apps/token/provider/ldap"
 )
 
 var (

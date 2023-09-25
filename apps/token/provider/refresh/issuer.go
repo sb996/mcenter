@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/token/provider"
 	"github.com/infraboard/mcube/exception"
 	"github.com/infraboard/mcube/ioc"
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/token/provider"
 )
 
 type issuer struct {

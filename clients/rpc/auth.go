@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/infraboard/mcenter/apps/service"
+	"github.com/sb996/mcenter/apps/service"
 )
 
 // 客户端携带的凭证

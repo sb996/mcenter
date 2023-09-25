@@ -3,7 +3,7 @@ package impl_test
 import (
 	"testing"
 
-	"github.com/infraboard/mcenter/apps/role"
+	"github.com/sb996/mcenter/apps/role"
 )
 
 func TestAddPermissionToRole(t *testing.T) {

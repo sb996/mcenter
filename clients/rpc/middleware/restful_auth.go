@@ -13,11 +13,11 @@ import (
 	"github.com/infraboard/mcube/logger/zap"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/apps/policy"
-	"github.com/infraboard/mcenter/apps/token"
-	"github.com/infraboard/mcenter/apps/user"
-	"github.com/infraboard/mcenter/clients/rpc"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/apps/policy"
+	"github.com/sb996/mcenter/apps/token"
+	"github.com/sb996/mcenter/apps/user"
+	"github.com/sb996/mcenter/clients/rpc"
 )
 
 var (

@@ -7,18 +7,18 @@ import (
 	"time"
 
 	"github.com/emicklei/go-restful/v3"
-	"github.com/infraboard/mcenter/apps/endpoint"
-	"github.com/infraboard/mcenter/swagger"
 	"github.com/infraboard/mcube/ioc"
 	"github.com/infraboard/mcube/ioc/apidoc"
 	"github.com/infraboard/mcube/ioc/health"
 	"github.com/infraboard/mcube/logger"
 	"github.com/infraboard/mcube/logger/zap"
+	"github.com/sb996/mcenter/apps/endpoint"
+	"github.com/sb996/mcenter/swagger"
 	"go.opentelemetry.io/contrib/instrumentation/github.com/emicklei/go-restful/otelrestful"
 
-	"github.com/infraboard/mcenter/conf"
-	"github.com/infraboard/mcenter/protocol/auth"
-	"github.com/infraboard/mcenter/version"
+	"github.com/sb996/mcenter/conf"
+	"github.com/sb996/mcenter/protocol/auth"
+	"github.com/sb996/mcenter/version"
 )
 
 // NewHTTPService 构建函数
